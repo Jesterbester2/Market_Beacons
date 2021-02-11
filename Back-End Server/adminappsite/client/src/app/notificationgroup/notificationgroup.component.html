@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+
+    <form>
+      <div class="form-row">
+
+        <div class="col-md-5">
+          <input type="text" name="name" id="name" [(ngModel)]="newNotigrp.name" placeholder="Name" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="description" id="description" [(ngModel)]="newNotigrp.description" placeholder="Description" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="beacongroupid" id="beacongroupid" [(ngModel)]="newNotigrp.beacongroupid" placeholder="Beacon Group" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="createdbyid" id="createdbyid" [(ngModel)]="newNotigrp.createdbyid" placeholder="Created By" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary" (click)="create()">Add</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="notificationgroups" *ngIf="notificationgroupList">
+      <table class="table">
+        <thead class="h">
+          <tr class="h">
+            <th class="h">Name</th>
+            <th class="h">Description</th>
+            <th class="h">beacongroup</th>
+            <th class="h">User</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="notificationgroup" *ngFor="let notificationgroup of notificationgroupList">
+
+            <td>{{notificationgroup.name}}</td>
+            <td>{{notificationgroup.description}}</td>
+            <td>{{notificationgroup.beacongroupid}}</td>
+            <td>{{notificationgroup.createdbyid}}</td>
+
+            <td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>

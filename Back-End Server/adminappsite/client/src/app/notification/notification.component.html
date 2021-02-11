@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+    <form>
+          <div class="form-row">
+
+            <div class="col-md-5">
+              <input type="text" name="name" id="name" [(ngModel)]="newNoti.name" placeholder="Name" class="form-control">
+            </div>
+            <div class="col-md-5">
+              <input type="text" name="description" id="description" [(ngModel)]="newNoti.description" placeholder="Description" class="form-control">
+            </div>
+            <div class="col-md-5">
+              <input type="text" name="mediapath" id="mediapath" [(ngModel)]="newNoti.mediapath" placeholder="Media Path" class="form-control">
+            </div>
+            <div class="col-md-5">
+              <input type="text" name="tagid" id="tagid" [(ngModel)]="newNoti.tagid" placeholder="Tag" class="form-control">
+            </div>
+            <div class="col-md-5">
+              <input type="text" name="active" id="active" [(ngModel)]="newNoti.active" placeholder="active" class="form-control">
+            </div>
+            <div class="col-md-5">
+              <input type="text" name="startdate" id="startdate" [(ngModel)]="newNoti.startdate" placeholder="Start Date" class="form-control">
+            </div>
+            <div class="col-md-5">
+              <input type="text" name="enddate" id="enddate" [(ngModel)]="newNoti.enddate" placeholder="End Date" class="form-control">
+            </div>
+            <div class="col-md-5">
+              <input type="text" name="createdbyid" id="createdbyid" [(ngModel)]="newNoti.createdbyid" placeholder="Created By" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-primary" (click)="create()">Add</button>
+            </div>
+          </div>
+        </form>
+
+
+    <div class="notis" *ngIf="notificationList">
+     <table class="table">
+       <thead class="h">
+         <tr class="h">
+           <th class="h">Name</th>
+           <th class="h">Description</th>
+           <th class="h">Media Path</th>
+           <th class="h">Tag ID</th>
+           <th class="h">Active</th>
+           <th class="h">startdate</th>
+           <th class="h">enddate</th>
+           <th class="h">User ID</th>
+         </tr>
+       </thead>
+       <tbody>
+
+         <tr class="noti" *ngFor="let noti of notificationList">
+
+             <td>{{noti.name}}</td>
+             <td>{{noti.description}}</td>
+             <td>{{noti.mediapath}}</td>
+             <td>{{noti.tagid}}</td>
+             <td>{{noti.active}}</td>
+             <td>{{noti.startdate}}</td>
+             <td>{{noti.enddate}}</td>
+             <td>{{noti.createdbyid}}</td>
+
+           <td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>

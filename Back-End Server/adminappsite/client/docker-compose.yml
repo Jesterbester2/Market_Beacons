@@ -1,0 +1,9 @@
+web:
+    build: .
+    ports:
+        - '4200:4200'
+        - "49153:49153"
+    volumes:
+        - ./client:/usr/src/app/client
+    environment:
+        - NODE_ENV=dev

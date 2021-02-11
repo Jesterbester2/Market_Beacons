@@ -1,0 +1,20 @@
+<form (submit)="register()">
+  <div class="col-md-5">
+    <label for="username">User name</label>
+    <input type="text" class="form-control" name="username" placeholder="Enter your user name" [(ngModel)]="credentials.username">
+  </div>
+  <div class="col-md-5">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="credentials.email">
+  </div>
+  <div class="col-md-5">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password">
+  </div>
+  <div class="col-md-5">
+    <select name="companyid" id="companyid" [(ngModel)]="credentials.companyid" class="form-control"  >
+      <option *ngFor="let company of companyList" value={{company._id}}>{{company.name}}</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-default">Register!</button>
+</form>

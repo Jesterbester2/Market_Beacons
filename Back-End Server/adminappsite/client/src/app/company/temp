@@ -1,0 +1,26 @@
+/*
+*
+* Creates new beacon entery in Database
+* url: post ./api/beacon
+*
+*/
+
+/*
+*
+* Searches Database for list beacons, returns list
+* url: get ./api/beacon
+*
+*/
+
+/*
+*
+* Searches Database for beacon based on id, then updates based on body
+* url: put  ./api/beacon
+*/
+
+/*
+*
+* Searches Database for beacon based on id, then removes from collection
+* url: delete ./api/beacon/:id
+*
+*/

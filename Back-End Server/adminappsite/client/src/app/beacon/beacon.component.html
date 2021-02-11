@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+    <form>
+      <div class="form-row">
+
+        <div class="col-md-5">
+          <input type="text" name="name" id="name" [(ngModel)]="newBeacon.name" placeholder="Name" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="beaconID" id="beaconID" [(ngModel)]="newBeacon.beaconID" placeholder="BeaconID" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="beacongroupid" id="beacongroupid" [(ngModel)]="newBeacon.beacongroupid" placeholder="Beacon Group" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="brand" id="brand" [(ngModel)]="newBeacon.brand" placeholder="Brand" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="strength" id="strength" [(ngModel)]="newBeacon.strength" placeholder="Strength" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary" (click)="create()">Add</button>
+        </div>
+      </div>
+    </form>
+
+
+    <div class="beacon" *ngIf="beaconList">
+      <table class="table">
+        <thead class="h">
+          <tr class="h">
+            <th class="h">BeaconID</th>
+            <th class="h">Name</th>
+            <th class="h">Brand</th>
+            <th class="h">Beacongroup</th>
+            <th class="h">Strength</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="beacon" *ngFor="let beacon of beaconList">
+
+            <td>{{beacon.beaconID}}</td>
+            <td>{{beacon.name}}</td>
+            <td>{{beacon.brand}}</td>
+            <td>{{beacon.beacongroupid}}</td>
+            <td>{{beacon.strength}}</td>
+
+
+            <td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>

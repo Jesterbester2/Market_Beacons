@@ -1,0 +1,74 @@
+beacongroup entry
+
+{}
+}
+"name": "Front door",
+"companyid": "5a9b80a6d116d2025ac48054",
+"purposeid": "5a9b9af66b4d7806160b9ae3",
+"description": "3 front door beacons"
+}
+
+
+beacon entry
+
+{
+"beaconID": "1111",
+"name": "beacon",
+"brand": "cool",
+"strength": "10",
+"beacongroupid": "5a9b9e325592a106346bef3e"
+}
+
+
+Notification entry
+{
+"created": "2018-03-04T23:57:25.630Z",
+"name": "fish",
+"description": "50% off fish",
+"mediapath": "/public/images/fish.jpeg",
+"tagid": "5a9b96dd6ea7fc05c896d2f1",
+"active": "true",
+"startdate": "2018-03-03T00:00:00.000Z",
+"enddate": "2018-03-30T00:00:00.000Z",
+"createdbyid": "5a9b951a6ea7fc05c896d2ed"
+}
+
+
+Notification Group entry
+{
+"notificationid": [
+  "5a9c8c624d078f00ab15509f",
+  "5a9c8c8a4d078f00ab1550a0",
+  "5a9c8cb14d078f00ab1550a1",
+  "5a9c8cc84d078f00ab1550a2"
+],
+"name": "General Ads",
+"description": "to advertise common items",
+"createdbyid": "5a9b95f96ea7fc05c896d2ef",
+"beacongroupid": "5a9b9e325592a106346bef3e"
+}
+
+Company Entry
+{
+"name": "McRonalds",
+"active": "true",
+}
+
+purpose entry
+{
+"purpose": "To sell canned beans"
+}
+
+tag Entry
+{
+"name": "Clothing"
+}
+
+user Entry
+{
+"role": "User",
+"username": "CinTucky",
+"email": "CincySantuckt@gmail.com",
+"companyid": "5a9b80a6d116d2025ac48054",
+"active": "true"
+}

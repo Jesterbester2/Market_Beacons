@@ -1,0 +1,7 @@
+<p-toggleButton onLabel="Bar Graph" offLabel="Line Graph" [(ngModel)]="val"></p-toggleButton>
+<ng-container *ngIf="val; else line">
+<p-chart  type="bar" [data]="data"></p-chart>
+</ng-container>
+<ng-template #line>
+  <p-chart type="line" [data]="data" ></p-chart>
+</ng-template>

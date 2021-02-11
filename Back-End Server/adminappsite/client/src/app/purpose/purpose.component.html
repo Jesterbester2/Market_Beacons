@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+
+    <form>
+      <div class="form-row">
+
+        <div class="col-md-5">
+          <input type="text" name="PuRpose" id="purpose" [(ngModel)]="newPurpose.purpose" placeholder="Title" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary" (click)="create()">Add</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="purposes" *ngIf="purposeList">
+      <table class="table">
+        <thead class="h">
+          <tr class="h">
+            <th class="h">purpose</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="purpose" *ngFor="let purpose of purposeList">
+
+            <td>{{purpose.purpose}}</td>
+
+
+            <td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>

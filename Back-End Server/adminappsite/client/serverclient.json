@@ -1,0 +1,365 @@
+{
+  "upload": [
+    {
+      "id": "1",
+      "dateuploaded": "2018-04-02T06:55:29.333Z",
+      "_id": "5ac1d3e1ee628a02142abef9",
+      "name": "hiddennum2.jpg",
+      "filetype": "image/jpeg",
+      "storedname": "file_1522652129328.jpg",
+      "link": "assets/chick_fil_a.jpeg",
+      "filepath": "public/uploads/images/",
+      "createdby": "5abc346fcf67f301c5767abf",
+      "active": true
+    },
+    {
+      "id": "2",
+      "dateuploaded": "2018-04-02T07:30:35.577Z",
+      "_id": "5ac1dc1b76cc13022ca55775",
+      "name": "clock codex.png",
+      "filetype": "image/jpeg",
+      "storedname": "file_1522654235575.png",
+      "link": "assets/burger_king.jpeg",
+      "filepath": "public/uploads/images/",
+      "createdby": "5abc346fcf67f301c5767abf",
+      "active": true
+    },
+    {
+      "id": "3",
+      "dateuploaded": "2018-04-02T07:34:48.273Z",
+      "_id": "5ac1dd1876cc13022ca55778",
+      "name": "hiddennum6.jpg",
+      "filetype": "image/jpeg",
+      "storedname": "file_1522654488272.jpg",
+      "link": "assets/gifchick.gif",
+      "filepath": "public/uploads/images/",
+      "createdby": "5abc346fcf67f301c5767abf",
+      "active": true
+    }
+  ],
+  "beacon": [
+    {
+      "id": "1",
+      "_id": "5ac1d325ee628a02142abef5",
+      "name": "front doors",
+      "beaconID": 1111,
+      "brand": "coolio",
+      "strength": 15,
+      "beacongroupid": {
+        "_id": "5ac1c90a80070501fc394a05",
+        "name": "front doors",
+        "description": "this is a test",
+        "companyid": "5abc33accf67f301c5767abe",
+        "purpose": "5abe76449928e40059a9db"
+      }
+    },
+    {
+      "id": "2",
+      "_id": "5ac1d33bee628a02142abef6",
+      "name": "front doors2",
+      "beaconID": 1234,
+      "brand": "coolio",
+      "strength": 15,
+      "beacongroupid": {
+        "_id": "5ac1c90a80070501fc394a05",
+        "name": "front doors",
+        "description": "this is a test",
+        "companyid": "5abc33accf67f301c5767abe",
+        "purpose": "5abe76449928e40059b1a9db"
+      }
+    },
+    {
+      "id": "3",
+      "_id": "5ac1d3a6ee628a02142abef8",
+      "name": "beacon3",
+      "beaconID": 4321,
+      "brand": "cool",
+      "strength": 10,
+      "beacongroupid": {
+        "_id": "5ac1d364ee628a02142abef7",
+        "name": "beacongrouptest",
+        "description": "this is a test",
+        "purpose": "5abe74a99928e40059b1a9da",
+        "companyid": "5abc33accf67f301c5767abe"
+      }
+    }
+  ],
+  "beacongroup": [
+    {
+      "id": "1",
+      "_id": "5ac1c90a80070501fc394a05",
+      "name": "front doors",
+      "description": "this is a test",
+      "companyid": {
+        "_id": "5abc33accf67f301c5767abe",
+        "name": "AdminCompany",
+        "active": true
+      },
+      "purpose": {
+        "_id": "5abe76449928e40059b1a9db",
+        "purpose": "Tests"
+      }
+    },
+    {
+      "id": "2",
+      "_id": "5ac1d364ee628a02142abef7",
+      "name": "beacongrouptest",
+      "description": "this is a test",
+      "purpose": {
+        "_id": "5abe74a99928e40059b1a9da",
+        "purpose": "Testing"
+      },
+      "companyid": {
+        "_id": "5abc33accf67f301c5767abe",
+        "name": "AdminCompany",
+        "active": true
+      }
+    }
+  ],
+  "notification": [
+    {
+      "id": "1",
+      "created": "2018-04-02T07:05:17.498Z",
+      "_id": "5ac1d62d76cc13022ca55774",
+      "name": "front doors",
+      "description": "this is not a test",
+      "mediapath": {
+        "dateuploaded": "2018-04-02T06:55:29.333Z",
+        "_id": "5ac1d3e1ee628a02142abef9",
+        "name": "hiddennum2.jpg",
+        "filetype": "image/jpeg",
+        "storedname": "file_1522652129328.jpg",
+        "link": "assets/chick_fil_a.jpeg",
+        "filepath": "public/uploads/images/",
+        "createdby": "5abc346fcf67f301c5767abf",
+        "active": true
+      },
+      "tagid": {
+        "_id": "5abd1d2bc510020109e3b152",
+        "name": "Food"
+      },
+      "active": false,
+      "startdate": "2018-03-14T00:00:00.000Z",
+      "enddate": "2018-05-01T00:00:00.000Z",
+      "createdbyid": "5abc346fcf67f301c5767abf"
+    },
+    {
+      "id": "2",
+      "created": "2018-04-02T07:33:10.661Z",
+      "_id": "5ac1dcb676cc13022ca55777",
+      "name": "testernotification2",
+      "description": "this is n a test",
+      "mediapath": {
+        "dateuploaded": "2018-04-02T07:30:35.577Z",
+        "_id": "5ac1dc1b76cc13022ca55775",
+        "name": "clock codex.png",
+        "filetype": "image/png",
+        "storedname": "file_1522654235575.png",
+        "link": "assets/burger_king.jpeg",
+        "filepath": "public/uploads/images/",
+        "createdby": "5abc346fcf67f301c5767abf",
+        "active": true
+      },
+      "tagid": {
+        "_id": "5abe748e9928e40059b1a9d9",
+        "name": "Clothes"
+      },
+      "active": true,
+      "startdate": "2018-03-14T00:00:00.000Z",
+      "enddate": "2018-05-01T00:00:00.000Z",
+      "createdbyid": "5abc346fcf67f301c5767abf"
+    },
+    {
+      "id": "3",
+      "created": "2018-04-02T07:36:18.674Z",
+      "_id": "5ac1dd7276cc13022ca5577a",
+      "name": "testernotification3",
+      "description": "this is a test",
+      "mediapath": {
+        "dateuploaded": "2018-04-02T07:34:48.273Z",
+        "_id": "5ac1dd1876cc13022ca55778",
+        "name": "hiddennum6.jpg",
+        "filetype": "image/jpeg",
+        "storedname": "file_1522654488272.jpg",
+        "link": "assets/gifchick.gif",
+        "filepath": "public/uploads/images/",
+        "createdby": "5abc346fcf67f301c5767abf",
+        "active": true
+      },
+      "tagid": {
+        "_id": "5abe748e9928e40059b1a9d9",
+        "name": "Clothes"
+      },
+      "active": true,
+      "startdate": "2018-03-14T00:00:00.000Z",
+      "enddate": "2018-05-21T00:00:00.000Z",
+      "createdbyid": "5abc346fcf67f301c5767abf"
+    }
+  ],
+  "notificationgroup": [
+    {
+      "notificationid": [
+        {
+          "created": "2018-04-02T07:05:17.498Z",
+          "_id": "5ac1d62d76cc13022ca55774",
+          "name": "front doors",
+          "description": "this is not a test",
+          "mediapath": "5ac1d3e1ee628a02142abef9",
+          "tagid": "5abd1d2bc510020109e3b152",
+          "active": false,
+          "startdate": "2018-03-14T00:00:00.000Z",
+          "enddate": "2018-05-01T00:00:00.000Z",
+          "createdbyid": "5abc346fcf67f301c5767abf"
+        },
+        {
+          "created": "2018-04-02T07:33:10.661Z",
+          "_id": "5ac1dcb676cc13022ca55777",
+          "name": "testernotification2",
+          "description": "this is n a test",
+          "mediapath": "5ac1dc1b76cc13022ca55775",
+          "tagid": "5abe748e9928e40059b1a9d9",
+          "active": true,
+          "startdate": "2018-03-14T00:00:00.000Z",
+          "enddate": "2018-05-01T00:00:00.000Z",
+          "createdbyid": "5abc346fcf67f301c5767abf"
+        },
+        {
+          "created": "2018-04-02T07:36:18.674Z",
+          "_id": "5ac1dd7276cc13022ca5577a",
+          "name": "testernotification3",
+          "description": "this is a test",
+          "mediapath": "5ac1dd1876cc13022ca55778",
+          "tagid": "5abe748e9928e40059b1a9d9",
+          "active": true,
+          "startdate": "2018-03-14T00:00:00.000Z",
+          "enddate": "2018-05-21T00:00:00.000Z",
+          "createdbyid": "5abc346fcf67f301c5767abf"
+        }
+      ],
+      "id": "1",
+      "_id": "5ac1de2776cc13022ca5577c",
+      "name": "testingnotificationgroup",
+      "description": "this is a test",
+      "beacongroupid": {
+        "_id": "5ac1c90a80070501fc394a05",
+        "name": "front doors",
+        "description": "this is a test",
+        "companyid": "5abc33accf67f301c5767abe",
+        "purpose": "5abe76449928e40059b1a9db"
+      },
+      "createdbyid": "5abc346fcf67f301c5767abf"
+    },
+    {
+      "notificationid": [
+        {
+          "created": "2018-04-02T07:36:18.674Z",
+          "_id": "5ac1dd7276cc13022ca5577a",
+          "name": "testernotification3",
+          "description": "this is a test",
+          "mediapath": "5ac1dd1876cc13022ca55778",
+          "tagid": "5abe748e9928e40059b1a9d9",
+          "active": true,
+          "startdate": "2018-03-14T00:00:00.000Z",
+          "enddate": "2018-05-21T00:00:00.000Z",
+          "createdbyid": "5abc346fcf67f301c5767abf"
+        }
+      ],
+      "id": "2",
+      "_id": "5ac1de6b76cc13022ca5577d",
+      "name": "testingnotificationgroup2",
+      "description": "this is a test",
+      "beacongroupid": {
+        "_id": "5ac1d364ee628a02142abef7",
+        "name": "beacongrouptest",
+        "description": "this is a test",
+        "purpose": "5abe74a99928e40059b1a9da",
+        "companyid": "5abc33accf67f301c5767abe"
+      },
+      "createdbyid": "5abc346fcf67f301c5767abf"
+    }
+  ],
+  "company": [
+    {
+      "id": "1",
+      "_id": "5aa82d69330d430041298127",
+      "name": "admincomp",
+      "active": true
+    },
+    {
+      "id": "2",
+      "_id": "5abc33accf67f301c5767abe",
+      "name": "AdminCompany",
+      "active": true
+    },
+    {
+      "id": "3",
+      "_id": "5abd16f8c510020109e3b151",
+      "name": "McRonalds",
+      "active": true
+    }
+  ],
+  "tag": [
+    {
+      "id": "1",
+      "_id": "5abd1d2bc510020109e3b152",
+      "name": "Food"
+    },
+    {
+      "id": "2",
+      "_id": "5abe748e9928e40059b1a9d9",
+      "name": "Clothes"
+    },
+    {
+      "id": "3",
+      "_id": "5abecca3575b980029a26550",
+      "name": "shoes"
+    },
+    {
+      "id": "4",
+      "_id": "5abed11d575b980029a26551",
+      "name": "flour"
+    },
+    {
+      "id": "5",
+      "_id": "5abef785b1032b0041201bb8",
+      "name": "Socks"
+    },
+    {
+      "id": "6",
+      "_id": "5abef7f9358bda004bf1922c",
+      "name": "events"
+    },
+    {
+      "id": "7",
+      "_id": "5ac2bb20c7527e001ca36987",
+      "name": "sport"
+    },
+    {
+      "name": "bats",
+      "_id": 8,
+      "id": "jgDjW5R"
+    },
+    {
+      "name": "phone",
+      "_id": 9,
+      "id": "EZC6wOn"
+    },
+    {
+      "name": "horse",
+      "_id": 10,
+      "id": "VDiw4b0"
+    }
+  ],
+  "purpose": [
+    {
+      "id": "1",
+      "_id": "5abe74a99928e40059b1a9da",
+      "purpose": "Testing"
+    },
+    {
+      "id": "2",
+      "_id": "5abe76449928e40059b1a9db",
+      "purpose": "Tests"
+    }
+  ]
+}

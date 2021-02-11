@@ -1,0 +1,27 @@
+version: "2"
+services:
+    client:
+        container_name: 'client'
+        build: ./client
+        ports:
+            - "4200:4200"
+            - "49153:49153"
+        volumes:
+            - ./client:/usr/src/app/client/
+        environment:
+            - NODE_ENV=dev
+    server:
+        container_name: 'server'
+        build: ./server
+        volumes:
+            - ./server:/usr/src/app/server/
+        ports:
+            - "3000:3000"
+        links:
+            - database
+    database:
+        image: mongo
+        volumes:
+            - ./data:/data/db
+        ports:
+            - "27017:27017"

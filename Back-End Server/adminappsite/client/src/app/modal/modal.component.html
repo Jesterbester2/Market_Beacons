@@ -1,0 +1,17 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{title}}</h4>
+  <button  type="button" class="close" aria-label="Close"
+   (click)="activeModal.dismiss('Cross click')">
+  </button>
+</div>
+<div class="modal-body">
+
+    <app-beacon-graph [objective]="objectarray" ></app-beacon-graph>
+
+
+</div>
+<div class="modal-footer">
+  <button pButton (click)="activeModal.dismiss('Close clicked')">
+    Close Clicked
+  </button>
+</div>

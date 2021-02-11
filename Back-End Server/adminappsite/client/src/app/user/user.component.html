@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+
+
+
+    <div class="users" *ngIf="usersList">
+      <table class="table">
+        <thead class="h">
+          <tr class="h">
+            <th class="h">Username</th>
+            <th class="h">Company</th>
+            <th class="h">Email</th>
+            <th class="h">Active</th>
+            <th class="h">Role</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="user" *ngFor="let user of usersList">
+
+            <td>{{user.username}}</td>
+            <td>{{user.companyid}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.active}}</td>
+            <td>{{user.role}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>

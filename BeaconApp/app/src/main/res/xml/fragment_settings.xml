@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Bluetooth">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="scan"
+            android:title="Enable Scanning"
+            android:summary="Enable or disable beacon scanning. Will restart app."
+            android:defaultValue="true" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

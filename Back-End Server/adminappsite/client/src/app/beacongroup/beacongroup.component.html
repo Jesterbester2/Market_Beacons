@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+    <form>
+      <div class="form-row">
+
+        <div class="col-md-5">
+          <input type="text" name="name" id="name" [(ngModel)]="newBeacongroup.name" placeholder="Name" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="description" id="description" [(ngModel)]="newBeacongroup.description" placeholder="Description" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="purposeid" id="purposeid" [(ngModel)]="newBeacongroup.purposeid" placeholder="Purpose" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="companyid" id="companyid" [(ngModel)]="newBeacongroup.companyid" placeholder="Company" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary" (click)="create()">Add</button>
+        </div>
+      </div>
+    </form>
+
+
+    <div class="beacongroups" *ngIf="beacongroupList">
+      <table class="table">
+        <thead class="h">
+          <tr class="h">
+            <th class="h">Name</th>
+            <th class="h">Company</th>
+            <th class="h">Purpose</th>
+            <th class="h">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="beacongroup" *ngFor="let beacongroup of beacongroupList">
+
+            <td>{{beacongroup.name}}</td>
+            <td>{{beacongroup.companyid}}</td>
+            <td>{{beacongroup.purposeid}}</td>
+            <td>{{beacongroup.description}}</td>
+
+
+            <td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>

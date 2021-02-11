@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+    <form>
+      <div class="form-row">
+
+        <div class="col-md-5">
+          <input type="text" name="name" id="name" [(ngModel)]="newTag.name" placeholder="Title" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary" (click)="create()">Add</button>
+        </div>
+      </div>
+    </form>
+
+
+    <div class="tags" *ngIf="tagsList">
+      <table class="table">
+        <thead class="h">
+          <tr class="h">
+            <th class="h">Tag Name</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="tag" *ngFor="let tag of tagsList">
+
+            <td>{{tag.name}}</td>
+
+            <td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>
